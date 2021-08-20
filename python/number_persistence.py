@@ -80,6 +80,11 @@ def persistence_imp(n):
         i+=1
     return i
 
+# More interesting way to multiply digits in a number
+p = 1
+for x in str(n):
+    p *= int(x)
+
 #eval_time(persistence(11))
 #eval_time(persistence(100021))
 #eval_time(persistence(468299))
